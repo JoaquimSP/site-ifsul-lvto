@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corpo Docente - Tecnólogo em Análise e Desenvolvimento de Sistemas - IFSul Campus Santana do Livramento</title>
+    <link rel="stylesheet" href="css/style-tads.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-if-O70WYjLHZoGC5BnplvyLtLJvJHOeqZ.ico" type="image/x-icon">
+    <style>
+        .docentes-section {
+            padding: 40px 0;
+        }
+
+        .docentes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 24px;
+            margin-top: 32px;
+        }
+
+        .docente-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .docente-card:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+
+        .docente-header {
+            padding: 24px;
+            text-align: center;
+            background: linear-gradient(135deg, var(--light-green), var(--medium-green));
+            color: var(--white);
+        }
+
+        .docente-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            font-size: 32px;
+        }
+
+        .docente-name {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .docente-title {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .docente-content {
+            padding: 24px;
+        }
+
+        .research-lines {
+            margin-bottom: 20px;
+        }
+
+        .research-lines h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .research-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .research-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-light);
+            font-size: 14px;
+        }
+
+        .research-list li:last-child {
+            border-bottom: none;
+        }
+
+        .docente-contact {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary-blue);
+            font-size: 14px;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .docente-contact:hover {
+            color: var(--medium-green);
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Acessibilidade -->
+    <div class="accessibility-bar">
+        <div class="container">
+            <div class="accessibility-content">
+                <div class="accessibility-links">
+                    <a href="#conteudo" accesskey="1">
+                        <i class="fas fa-arrow-down"></i>
+                        Conteúdo <span class="key">1</span>
+                    </a>
+                    <a href="#menu" accesskey="2">
+                        <i class="fas fa-bars"></i>
+                        Menu <span class="key">2</span>
+                    </a>
+                </div>
+                <div class="accessibility-tools">
+                    <button id="high-contrast" class="tool-btn">
+                        <i class="fas fa-adjust"></i>
+                        Alto Contraste
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <div class="logo-grid">
+                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-ifsul-lvto-WptuigTsNjgoJOfxqyPkem0r0GH6V3.png" alt="Logo do IFSul">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-hero">
+                    <h1 class="course-title">
+                        Tecnólogo em
+                        <span class="highlight">Análise e Desenvolvimento</span>
+                        de Sistemas
+                    </h1>
+                    <p class="course-subtitle">
+                        Forme-se em uma das áreas mais promissoras da tecnologia com ensino de qualidade e infraestrutura moderna no Campus IFSul Santana do Livramento.
+                    </p>
+                </div>
+                <div class="header-actions">
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/ifsul.lvto" target="_blank" aria-label="Facebook" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ifsul_livramento/" target="_blank" aria-label="Instagram" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.santana.ifsul.edu.br/" target="_blank" aria-label="Site Oficial" class="social-link">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegação -->
+    <nav class="main-nav" id="menu">
+        <div class="container">
+            <div class="nav-content">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        <span>Início</span>
+                    </a></li>
+                    <li><a href="index.html#informacoes" class="nav-link">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Informações</span>
+                    </a></li>
+                    <li><a href="index.html#perfil" class="nav-link">
+                        <i class="fas fa-user-graduate"></i>
+                        <span>Perfil</span>
+                    </a></li>
+                    <li><a href="index.html#matriz" class="nav-link">
+                        <i class="fas fa-table"></i>
+                        <span>Matriz</span>
+                    </a></li>
+                    <li><a href="index.html#documentos" class="nav-link">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Documentos</span>
+                    </a></li>
+                    <li><a href="mural-tads.html" class="nav-link">
+                        <i class="fas fa-list-ul"></i>
+                        <span>Mural TADS</span>
+                    </a></li>
+                    <li><a href="docentes.html" class="nav-link active">
+                        <i class="fas fa-users"></i>
+                        <span>Corpo Docente</span>
+                    </a></li>                    
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Menu mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main class="main-content" id="conteudo">
+        <div class="container">
+            <div class="content-layout">
+                <!-- Sidebar -->
+                <aside class="quick-nav">
+                    <div class="quick-nav-card">
+                        <h3>
+                            <i class="fas fa-users"></i>
+                            Navegação
+                        </h3>
+                        <ul class="quick-links">
+                            <li><a href="index.html">Voltar ao Início</a></li>
+                            <li><a href="mural-tads.html">Mural TADS</a></li>
+                            <li><a href="index.html#matriz">Matriz Curricular</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="quick-nav-card stats-card">
+                        <h3><i class="fas fa-chart-bar"></i> Estatísticas</h3>
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label">Professores</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Área principal -->
+                <div class="content-area">
+                    <!-- Header -->
+                    <section class="hero-section">
+                        <div class="hero-content">
+                            <div class="hero-badge">
+                                <i class="fas fa-users"></i>
+                                Equipe Acadêmica
+                            </div>
+                            <h1 class="hero-title">
+                                Corpo <span class="highlight">Docente</span>
+                            </h1>
+                            <p class="hero-subtitle">
+                                Conheça os professores especializados que compõem o corpo docente do curso de Tecnólogo em Análise e Desenvolvimento de Sistemas.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Docentes -->
+                    <section class="docentes-section">
+                        <div class="container">
+                            <div class="docentes-grid">
+                                <!-- Professor Abner -->
+                                <div class="docente-card">
+                                    <div class="docente-header">
+                                        <div class="docente-avatar">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN7fm0oSVco20fdPw5R8vWfqWxTrhFKkP0UQ&s" alt="Foto do Professor Abner Gilead Araujo Guedes">
+                                        </div>
+                                        <h3 class="docente-name">Abner Gilead Araujo Guedes</h3>
+                                        <p class="docente-title">Mestre</p>
+                                    </div>
+                                    <div class="docente-content">
+                                        <div class="research-lines">
+                                            <h4>
+                                                <i class="fas fa-microscope"></i>
+                                                Linhas de Pesquisa:
+                                            </h4>
+                                            <ul class="research-list">
+                                                <li>Sistemas Inteligentes e Inteligência Artificial</li>
+                                                <li>Internet das Coisas e Automação</li>
+                                                <li>Realidade Virtual, Aumentada e Jogos Digitais</li>
+                                                <li>Ciência de Dados e Computação Aplicada</li>
+                                            </ul>
+                                        </div>
+                                        <a href="mailto:abner.guedes@ifsul.edu.br" class="docente-contact">
+                                            <i class="fas fa-envelope"></i>
+                                            abner.guedes@ifsul.edu.br
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Professor Alfredo -->
+                                <div class="docente-card">
+                                    <div class="docente-header">
+                                        <div class="docente-avatar">
+                                            <img src="https://lh3.googleusercontent.com/a-/AFdZucqj6KLVjNMpu7usdm-afaM-kDoekHWiwlrB1kRy=s96-c" alt="Foto do Professor Alfredo Parteli Gomes">
+                                        </div>
+                                        <h3 class="docente-name">Alfredo Parteli Gomes</h3>
+                                        <p class="docente-title">Mestre</p>
+                                    </div>
+                                    <div class="docente-content">
+                                        <div class="research-lines">
+                                            <h4>
+                                                <i class="fas fa-microscope"></i>
+                                                Linhas de Pesquisa:
+                                            </h4>
+                                            <ul class="research-list">
+                                                <li>Ciência de Dados e Computação Aplicada</li>
+                                                <li>Sistemas Inteligentes e Inteligência Artificial</li>
+                                            </ul>
+                                        </div>
+                                        <a href="mailto:alfredo.gomes@ifsul.edu.br" class="docente-contact">
+                                            <i class="fas fa-envelope"></i>
+                                            alfredo.gomes@ifsul.edu.br
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Professor Kauê Vargas Sitó -->
+                                <div class="docente-card">
+                                    <div class="docente-header">
+                                        <div class="docente-avatar">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJwP9pfPlmVOQZ6oeoPy0H_KZx87pgZRCyIA&s" alt="Foto do Professor Kauê Vargas Sitó">
+                                        </div>
+                                        <h3 class="docente-name">Kauê Vargas Sitó</h3>
+                                        <p class="docente-title">Mestre</p>
+                                    </div>
+                                    <div class="docente-content">
+                                        <div class="research-lines">
+                                            <h4>
+                                                <i class="fas fa-microscope"></i>
+                                                Linhas de Pesquisa:
+                                            </h4>
+                                            <ul class="research-list">
+                                                <li>Sistemas Inteligentes e Inteligência Artificial</li>
+                                            </ul>
+                                        </div>
+                                        <a href="mailto:kauesito@ifsul.edu.br" class="docente-contact">
+                                            <i class="fas fa-envelope"></i>
+                                            kauesito@ifsul.edu.br
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Professor Everton Felix -->
+                                <div class="docente-card">
+                                    <div class="docente-header">
+                                        <div class="docente-avatar">
+                                            <img src="https://utec.edu.uy/uploads/profesor/659759ef1691166115179b0ab7740b348f50f5cb.jpg" alt="Foto do Professor Everton da Silva Felix">
+                                        </div>
+                                        <h3 class="docente-name">Everton da Silva Felix</h3>
+                                        <p class="docente-title">Mestre</p>
+                                    </div>
+                                    <div class="docente-content">
+                                        <div class="research-lines">
+                                            <h4>
+                                                <i class="fas fa-microscope"></i>
+                                                Linhas de Pesquisa:
+                                            </h4>
+                                            <ul class="research-list">
+                                                <li>Ciência de Dados e Computação Aplicada</li>
+                                                <li>Internet das Coisas e Automação</li>
+                                            </ul>
+                                        </div>
+                                        <a href="mailto:evertonfelix@ifsul.edu.br" class="docente-contact">
+                                            <i class="fas fa-envelope"></i>
+                                            evertonfelix@ifsul.edu.br
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <a href="#" class="chatbot-link" 
+           aria-label="Abrir chat do TADSBot - Assistente virtual"
+           title="Clique para conversar com o TADSBot" 
+           onclick="alert('TADSBot em desenvolvimento!')">
+            <div class="chatbot-tooltip">
+                💬 Precisa de ajuda? 
+                <br>🤖 Clique aqui para conversar com o TADSBot!
+            </div>
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/tadsbot-icon-Eh65jm1TEJnhKIN2jQYkPZR8tCzsQS.png" 
+                 alt="Ícone do TADSBot - Clique para abrir o chat" 
+                 class="chatbot-icon">
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <div class="logo-grid">
+                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-ifsul-lvto-WptuigTsNjgoJOfxqyPkem0r0GH6V3.png" alt="Logo do IFSul">
+                            </div>
+                        </div>
+                        <div class="footer-text">
+                            <h3>Instituto Federal</h3>
+                            <p>Sul-rio-grandense</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Campus Santana do Livramento</h4>
+                    <p>Tecnólogo em Análise e Desenvolvimento de Sistemas</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Santana do Livramento, RS</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#matriz">Matriz Curricular</a></li>
+                        <li><a href="index.html#documentos">Documentos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Instituto Federal Sul-rio-grandense. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script-tads.js"></script>
+</body>
+</html>

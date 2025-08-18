@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnólogo em Análise e Desenvolvimento de Sistemas - IFSul Campus Santana do Livramento</title>
+    <link rel="stylesheet" href="css/style-tads.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-if-O70WYjLHZoGC5BnplvyLtLJvJHOeqZ.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Barra de Acessibilidade -->
+    <div class="accessibility-bar">
+        <div class="container">
+            <div class="accessibility-content">
+                <div class="accessibility-links">
+                    <a href="#conteudo" accesskey="1">
+                        <i class="fas fa-arrow-down"></i>
+                        Conteúdo <span class="key">1</span>
+                    </a>
+                    <a href="#menu" accesskey="2">
+                        <i class="fas fa-bars"></i>
+                        Menu <span class="key">2</span>
+                    </a>
+                </div>
+                <div class="accessibility-tools">
+                    <button id="high-contrast" class="tool-btn">
+                        <i class="fas fa-adjust"></i>
+                        Alto Contraste
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <div class="logo-grid">
+                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-ifsul-lvto-WptuigTsNjgoJOfxqyPkem0r0GH6V3.png" alt="Logo do IFSul">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-hero">
+                    <h1 class="course-title">
+                        Tecnólogo em
+                        <span class="highlight">Análise e Desenvolvimento</span>
+                        de Sistemas
+                    </h1>
+                    <p class="course-subtitle">
+                        Forme-se em uma das áreas mais promissoras da tecnologia com ensino de qualidade e infraestrutura moderna no Campus IFSul Santana do Livramento.
+                    </p>
+                </div>
+                <div class="header-actions">
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/ifsul.lvto" target="_blank" aria-label="Facebook" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ifsul_livramento/" target="_blank" aria-label="Instagram" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.santana.ifsul.edu.br/" target="_blank" aria-label="Site Oficial" class="social-link">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegação -->
+    <nav class="main-nav" id="menu">
+        <div class="container">
+            <div class="nav-content">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">
+                        <i class="fas fa-home"></i>
+                        <span>Início</span>
+                    </a></li>
+                    <li><a href="#informacoes" class="nav-link">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Informações</span>
+                    </a></li>
+                    <li><a href="#perfil" class="nav-link">
+                        <i class="fas fa-user-graduate"></i>
+                        <span>Perfil</span>
+                    </a></li>
+                    <li><a href="#matriz" class="nav-link">
+                        <i class="fas fa-table"></i>
+                        <span>Matriz</span>
+                    </a></li>
+                    <li><a href="#documentos" class="nav-link">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Documentos</span>
+                    </a></li>
+                    <li><a href="mural-tads.html" class="nav-link">
+                        <i class="fas fa-list-ul"></i>
+                        <span>Mural TADS</span>
+                    </a></li>
+                    <li><a href="docentes.html" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        <span>Corpo Docente</span>
+                    </a></li>                    
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Menu mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main class="main-content" id="conteudo">
+        <div class="container">
+            <div class="content-layout">
+                <!-- Navegação rápida -->
+                <aside class="quick-nav">
+                    <div class="quick-nav-card">
+                        <h3>
+                            <i class="fas fa-rocket"></i>
+                            Navegação Rápida
+                        </h3>
+                        <ul class="quick-links">
+                            <li><a href="#news-slider-section">Notícias em Destaque</a></li>
+                            <li><a href="#informacoes">Informações</a></li>
+                            <li><a href="#perfil">Perfil do Egresso</a></li>
+                            <li><a href="#atuacao">Campo de Atuação</a></li>
+                            <li><a href="#matriz">Matriz Curricular</a></li>
+                            <li><a href="#documentos">Documentos</a></li>
+                            <li><a href="mural-tads.html">Mural TADS</a></li>
+                            <li><a href="docentes.html">Corpo Docente</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="quick-nav-card">
+                        <h3>
+                            <i class="fas fa-calendar-alt"></i>
+                            Semestres
+                        </h3>
+                        <div class="semester-grid">
+                            <a href="#sem1" class="semester-btn">1º</a>
+                            <a href="#sem2" class="semester-btn">2º</a>
+                            <a href="#sem3" class="semester-btn">3º</a>
+                            <a href="#sem4" class="semester-btn">4º</a>
+                            <a href="#sem5" class="semester-btn">5º</a>
+                            <a href="#sem6" class="semester-btn">6º</a>
+                        </div>
+                    </div>
+
+                    <div class="quick-nav-card stats-card">
+                        <h3>
+                            <i class="fas fa-chart-line"></i>
+                            Estatísticas
+                        </h3>
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="stat-number">2.165h</span>
+                                <span class="stat-label">Carga Horária</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">6</span>
+                                <span class="stat-label">Semestres</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">39</span>
+                                <span class="stat-label">Disciplinas</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Área de Conteúdo Principal -->
+                <div class="content-area">
+                  <!-- Notícias em Destaque (Slider) -->
+                    <section id="news-slider-section" class="news-slider-section">
+                    <div class="slider-header">
+                        <h2><i class="fas fa-star"></i> Notícias em Destaque</h2>
+                        <p>Fique por dentro das últimas novidades e oportunidades do curso.</p>
+                    </div>
+
+                    <div class="news-slider-wrapper">
+                        <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                        
+                        <div class="slider-track">
+                        <!-- Notícia 1 -->
+                        <div class="news-slide">
+                            <article class="post-card">
+                            <div class="post-header">
+                                <div class="post-category category-noticia">
+                                <i class="fas fa-newspaper"></i>
+                                <span>Notícia</span>
+                                </div>
+                                <div class="post-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>01/08/2025</span>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <h2 class="post-title">📢 Seleção Complementar - TADS</h2>
+                                <p class="post-text">Atenção: Inscrições abertas para o Curso Superior de Tecnólogo em Análise e Desenvolvimento de Sistemas – Noite 🗓 Período de inscrição: 12 a 18 de agosto de 2025. 📍 Início das aulas: 4 de agosto de 2025.</p>
+                            </div>
+                            </article>
+                        </div>
+
+                        <!-- Notícia 2 -->
+                        <div class="news-slide">
+                            <article class="post-card">
+                            <div class="post-header">
+                                <div class="post-category category-evento">
+                                <i class="fas fa-calendar-check"></i>
+                                <span>Evento</span>
+                                </div>
+                                <div class="post-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>16/08/2025</span>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <h2 class="post-title">🚀 7ª FEBITEC vem aí</h2>
+                                <p class="post-text">A Feira Binacional de Tecnologia é uma feira de apresentação de trabalhos de alunos de instituições públicas e privadas, com o objetivo de estimular a troca de conhecimentos nos diferentes níveis e áreas de ensino. Acontecerá nos dias 21, 22 e 23 de Outubro.</p>
+                            </div>
+                            </article>
+                        </div>
+
+                        <!-- Notícia 3 -->
+                        <div class="news-slide">
+                            <article class="post-card">
+                            <div class="post-header">
+                                <div class="post-category category-emprego">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Emprego</span>
+                                </div>
+                                <div class="post-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>16/08/2025</span>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <h2 class="post-title">👨‍🏫 Seleção de Professor(a) Substituto(a) - Área de Matemática</h2>
+                                <p class="post-text">📢 Inscrições abertas! O IFSul – Câmpus Santana do Livramento está com processo seletivo para Professor Substituto de Matemática. 🗓 Período de inscrição: 16 a 21 de agosto de 2025 (prorrogável até 1º de setembro se não houver inscritos).</p>
+                            </div>
+                            </article>
+                        </div>
+
+                        <!-- Notícia 4 -->
+                        <div class="news-slide">
+                            <article class="post-card">
+                            <div class="post-header">
+                                <div class="post-category category-emprego">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Estágio</span>
+                                </div>
+                                <div class="post-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>27/06/2025</span>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <h2 class="post-title">💼 Oportunidade de Estágio (T.I)</h2>
+                                <p class="post-text">Processo Seletivo para Contratação de Estagiário (a) na Área de TI. Informações e publicações: www.santana.ifsul.edu.br/estagios-livramento.</p>
+                            </div>
+                            </article>
+                        </div>
+                        </div>
+
+                        <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+
+                    <div class="slider-footer">
+                        <a href="mural-tads.html" class="slider-all-btn">
+                        <i class="fas fa-list-ul"></i> Ver todas as notícias
+                        </a>
+                    </div>
+                    </section>
+
+                    <!-- Cards sobre as informações do curso -->
+                    <section id="informacoes" class="info-section">
+                        <div class="section-header">
+                            <h2>Informações do Curso</h2>
+                            <p>Conheça todos os detalhes sobre o curso de Tecnólogo em ADS</p>
+                        </div>
+                        <div class="info-cards">
+                            <div class="info-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Nível de Ensino</h3>
+                                    <p>Graduação</p>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-moon"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Turno</h3>
+                                    <p>Noturno</p>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Modalidade</h3>
+                                    <p>Presencial</p>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Regime</h3>
+                                    <p>Semestral</p>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Carga Horária</h3>
+                                    <p>2.165 horas</p>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-hourglass-half"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Duração</h3>
+                                    <p>6 semestres</p>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Estágio Obrigatório</h3>
+                                    <p>Não possui</p>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-door-open"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Ingresso</h3>
+                                    <p>Semestral</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Seção de Perfil -->
+                    <section id="perfil" class="profile-section">
+                        <div class="section-content">
+                            <div class="content-text">
+                                <div class="section-header">
+                                    <h2>Perfil do Egresso</h2>
+                                    <p>Conheça o perfil profissional que você desenvolverá</p>
+                                </div>
+                                <div class="text-content">
+                                    <p>O perfil profissional do egresso do Curso contempla a formação pautada na construção de saberes na área tecnológica que permitam a produção de sistemas computacionais de qualidade e que atendam às necessidades de mercado, com criatividade, senso crítico, responsabilidade e proximidade com o usuário.</p>
+                                    <p>Esse profissional deverá <strong>analisar, projetar, documentar, especificar, desenvolver, testar, implantar e manter</strong> sistemas computacionais de informação.</p>
+                                </div>
+                                <div class="skills-grid">
+                                    <div class="skill-item">
+                                        <i class="fas fa-search"></i>
+                                        <span>Analisar</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-drafting-compass"></i>
+                                        <span>Projetar</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-file-alt"></i>
+                                        <span>Documentar</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-code"></i>
+                                        <span>Desenvolver</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-vial"></i>
+                                        <span>Testar</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-rocket"></i>
+                                        <span>Implantar</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-visual">
+                                <div class="tech-stack">
+                                    <div class="tech-item">
+                                        <i class="fab fa-js-square"></i>
+                                        <span>JavaScript</span>
+                                    </div>
+                                    <div class="tech-item">
+                                        <i class="fab fa-python"></i>
+                                        <span>Python</span>
+                                    </div>
+                                    <div class="tech-item">
+                                        <i class="fab fa-java"></i>
+                                        <span>Java</span>
+                                    </div>
+                                    <div class="tech-item">
+                                        <i class="fas fa-database"></i>
+                                        <span>Banco de Dados</span>
+                                    </div>
+                                    <div class="tech-item">
+                                        <i class="fab fa-react"></i>
+                                        <span>React</span>
+                                    </div>
+                                    <div class="tech-item">
+                                        <i class="fas fa-mobile-alt"></i>
+                                        <span>Mobile</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Campo de Atuação -->
+                    <section id="atuacao" class="field-section">
+                        <div class="section-header">
+                            <h2>Campo de Atuação</h2>
+                            <p>Descubra as oportunidades profissionais na área</p>
+                        </div>
+                        <div class="field-content">
+                            <div class="field-text">
+                                <p>Na atuação deste profissional, destacam-se as atividades com ferramentas computacionais, equipamentos de informática e metodologia de projetos na produção de sistemas.</p>
+                                <p>Para isso, será utilizado o raciocínio lógico, o emprego de linguagens de programação e de metodologias de construção de projetos, preocupando-se com a qualidade, usabilidade, robustez, integridade e segurança de programas computacionais.</p>
+                            </div>
+                            <div class="field-areas">
+                                <div class="area-card">
+                                    <i class="fas fa-brain"></i>
+                                    <h3>Raciocínio Lógico</h3>
+                                </div>
+                                <div class="area-card">
+                                    <i class="fas fa-code"></i>
+                                    <h3>Linguagens de Programação</h3>
+                                </div>
+                                <div class="area-card">
+                                    <i class="fas fa-project-diagram"></i>
+                                    <h3>Metodologias de Projetos</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Matriz Curricular -->
+                    <section id="matriz" class="matrix-section">
+                        <div class="section-header">
+                            <h2>Matriz Curricular</h2>
+                            <p>Conheça todas as disciplinas do curso organizadas por semestre</p>
+                        </div>
+                        
+                        <div class="semesters-container">
+                            <div class="semester-card" id="sem1">
+                                <div class="semester-header">
+                                    <div class="semester-info">
+                                        <h3>1º Semestre</h3>
+                                        <span class="subject-count">6 disciplinas</span>
+                                    </div>
+                                    <button class="toggle-btn" aria-label="Expandir semestre">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                </div>
+                                <div class="subjects-list">
+                                    <div class="subject-item">
+                                        <i class="fas fa-language"></i>
+                                        <span>Inglês Técnico I</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-sitemap"></i>
+                                        <span>Lógica de Programação</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-desktop"></i>
+                                        <span>Introdução à Informática</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-comments"></i>
+                                        <span>Comunicação e Expressão em Espanhol e Português</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-calculator"></i>
+                                        <span>Matemática Discreta</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-users"></i>
+                                        <span>Relações Humanas, Ética e Cidadania</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="semester-card" id="sem2">
+                                <div class="semester-header">
+                                    <div class="semester-info">
+                                        <h3>2º Semestre</h3>
+                                        <span class="subject-count">7 disciplinas</span>
+                                    </div>
+                                    <button class="toggle-btn" aria-label="Expandir semestre">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                </div>
+                                <div class="subjects-list">
+                                    <div class="subject-item">
+                                        <i class="fas fa-language"></i>
+                                        <span>Inglês Técnico II</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-code"></i>
+                                        <span>Programação I</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-cogs"></i>
+                                        <span>Sistemas Operacionais</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-database"></i>
+                                        <span>Banco de Dados I</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-mouse-pointer"></i>
+                                        <span>Interface Homem-Computador</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-infinity"></i>
+                                        <span>Métodos Quantitativos</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-chart-line"></i>
+                                        <span>Probabilidade e Estatística</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="semester-card" id="sem3">
+                                <div class="semester-header">
+                                    <div class="semester-info">
+                                        <h3>3º Semestre</h3>
+                                        <span class="subject-count">7 disciplinas</span>
+                                    </div>
+                                    <button class="toggle-btn" aria-label="Expandir semestre">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                </div>
+                                <div class="subjects-list">
+                                    <div class="subject-item">
+                                        <i class="fas fa-language"></i>
+                                        <span>Inglês Técnico III</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-object-group"></i>
+                                        <span>Programação Orientada a Objetos</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-project-diagram"></i>
+                                        <span>Estrutura de Dados</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-database"></i>
+                                        <span>Banco de Dados II</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-search"></i>
+                                        <span>Análise de Sistemas I</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-network-wired"></i>
+                                        <span>Redes de Computadores</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-users-cog"></i>
+                                        <span>Sociedade e Tecnologia</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="semester-card" id="sem4">
+                                <div class="semester-header">
+                                    <div class="semester-info">
+                                        <h3>4º Semestre</h3>
+                                        <span class="subject-count">7 disciplinas</span>
+                                    </div>
+                                    <button class="toggle-btn" aria-label="Expandir semestre">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                </div>
+                                <div class="subjects-list">
+                                    <div class="subject-item">
+                                        <i class="fas fa-book-reader"></i>
+                                        <span>Metodologia de Pesquisa</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-mobile-alt"></i>
+                                        <span>Programação Mobile I</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-globe"></i>
+                                        <span>Programação Web I </span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-database"></i>
+                                        <span>Banco de Dados III</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-file-invoice"></i>
+                                        <span>Análise de Sistemas II</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-vial"></i>
+                                        <span>Testes de Aplicações</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-broadcast-tower"></i>
+                                        <span>Sistemas Distribuídos</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="semester-card" id="sem5">
+                                <div class="semester-header">
+                                    <div class="semester-info">
+                                        <h3>5º Semestre</h3>
+                                        <span class="subject-count">6 disciplinas</span>
+                                    </div>
+                                    <button class="toggle-btn" aria-label="Expandir semestre">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                </div>
+                                <div class="subjects-list">
+                                    <div class="subject-item">
+                                        <i class="fas fa-drafting-compass"></i>
+                                        <span>Engenharia de Software</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-mobile-alt"></i>
+                                        <span>Programação Mobile II</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-globe"></i>
+                                        <span>Programação Web II</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-laptop-code"></i>
+                                        <span>Práticas em Análise e Desenvolvimento de Sistemas I</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Qualidade de Software</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-paragraph"></i>
+                                        <span>Produção Textual</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="semester-card" id="sem6">
+                                <div class="semester-header">
+                                    <div class="semester-info">
+                                        <h3>6º Semestre</h3>
+                                        <span class="subject-count">6 disciplinas</span>
+                                    </div>
+                                    <button class="toggle-btn" aria-label="Expandir semestre">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                </div>
+                                <div class="subjects-list">
+                                    <div class="subject-item">
+                                        <i class="fas fa-star"></i>
+                                        <span>Tópicos Avançados em Computação</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-tasks"></i>
+                                        <span>Gerência de Projetos de Software</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-user-shield"></i>
+                                        <span>Segurança e Auditoria de Sistemas</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-laptop-code"></i>
+                                        <span>Práticas em Análise e Desenvolvimento de Sistemas II</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-balance-scale"></i>
+                                        <span>Ética e Legislação Aplicada à Informática</span>
+                                    </div>
+                                    <div class="subject-item">
+                                        <i class="fas fa-lightbulb"></i>
+                                        <span>Empreendedorismo</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Seção de Documentos -->
+                    <section id="documentos" class="documents-section">
+                        <div class="section-header">
+                            <h2>Documentos Oficiais</h2>
+                            <p>Acesse toda a documentação oficial do curso</p>
+                        </div>
+                        
+                        <div class="documents-grid">
+                            <div class="document-category">
+                                <div class="category-header">
+                                    <i class="fas fa-book"></i>
+                                    <h3>Projeto Pedagógico</h3>
+                                </div>
+                                <div class="documents-list">
+                                    <div class="document-item">
+                                        <div class="doc-icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </div>
+                                        <div class="doc-info">
+                                            <h4>SL_TADS_PPC_2023_1</h4>
+                                            <span class="doc-meta">Projeto Pedagógico Atual</span>
+                                        </div>
+                                        <div class="doc-actions">
+                                            <a href="docs/SL_TADS_PPC_2023_1.pdf" target="_blank" class="download-btn">
+                                                <i class="fas fa-download"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="document-item">
+                                        <div class="doc-icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </div>
+                                        <div class="doc-info">
+                                            <h4>PPC_SL_TADS_2022</h4>
+                                            <span class="doc-meta">Versão Anterior</span>
+                                        </div>
+                                        <div class="doc-actions">
+                                            <a href="docs/PPC_SL_TADS_2022_2 _atualizado_1664970528.pdf" target="_blank" class="download-btn">
+                                                <i class="fas fa-download"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="document-category">
+                                <div class="category-header">
+                                    <i class="fas fa-table"></i>
+                                    <h3>Matrizes Curriculares</h3>
+                                </div>
+                                <div class="documents-list">
+                                    <div class="document-item featured">
+                                        <div class="doc-icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </div>
+                                        <div class="doc-info">
+                                            <h4>Matriz Curricular Atual</h4>
+                                            <span class="doc-meta">Cód. 390 - 2023/1</span>
+                                        </div>
+                                        <div class="doc-actions">
+                                            <span class="current-badge">2023</span>
+                                            <a href="docs/SL_TADS_Matriz_Curricular_390_2023_1_atualizada (3).pdf" target="_blank" class="download-btn">
+                                                <i class="fas fa-download"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="document-item">
+                                        <div class="doc-icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </div>
+                                        <div class="doc-info">
+                                            <h4>Matriz de Pré-Requisitos</h4>
+                                            <span class="doc-meta">Matriz de Pré-Requisitos</span>
+                                        </div>
+                                        <div class="doc-actions">
+                                            <a href="docs/Fluxograma_disciplinas_v2.pdf" target="_blank" class="download-btn">
+                                                <i class="fas fa-download"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="document-category">
+                                <div class="category-header">
+                                    <i class="fas fa-file-alt"></i>
+                                    <h3>Documentos</h3>
+                                </div>
+                                <div class="documents-list">
+                                    <div class="document-item">
+                                        <div class="doc-icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </div>
+                                        <div class="doc-info">
+                                            <h4>Horários das Aulas</h4>
+                                            <span class="doc-meta">2025/2</span>
+                                        </div>
+                                        <div class="doc-actions">
+                                            <a href="docs/Horario_TADS.pdf" target="_blank" class="download-btn">
+                                                <i class="fas fa-download"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="document-item">
+                                        <div class="doc-icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </div>
+                                        <div class="doc-info">
+                                            <h4>Calendário Letivo</h4>
+                                            <span class="doc-meta">2025/2</span>
+                                        </div>
+                                        <div class="doc-actions">
+                                            <a href="docs/Calendario_Letivo_2025_-_V2.pdf" target="_blank" class="download-btn">
+                                                <i class="fas fa-download"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <div class="document-category">
+                                <div class="category-header">
+                                    <i class="fas fa-file-alt"></i>
+                                    <h3>Regulamentos</h3>
+                                </div>
+                                <div class="documents-list">
+                                    <div class="document-item">
+                                        <div class="doc-icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </div>
+                                        <div class="doc-info">
+                                            <h4>Atividades Complementares</h4>
+                                            <span class="doc-meta">2023/2</span>
+                                        </div>
+                                        <div class="doc-actions">
+                                            <a href="docs/Regulamento_AC.pdf" target="_blank" class="download-btn">
+                                                <i class="fas fa-download"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="document-item">
+                                        <div class="doc-icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </div>
+                                        <div class="doc-info">
+                                            <h4>Trabalho de Conclusão</h4>
+                                            <span class="doc-meta">2025/2</span>
+                                        </div>
+                                        <div class="doc-actions">
+                                            <a href="docs/Regulamento_TCC.pdf" target="_blank" class="download-btn">
+                                                <i class="fas fa-download"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <a href="#" class="chatbot-link" 
+           aria-label="Abrir chat do TADSBot - Assistente virtual"
+           title="Clique para conversar com o TADSBot" 
+           onclick="alert('TADSBot em desenvolvimento!')">
+            <div class="chatbot-tooltip">
+                💬 Precisa de ajuda? 
+                <br>🤖 Clique aqui para conversar com o TADSBot!
+            </div>
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/tadsbot-icon-Eh65jm1TEJnhKIN2jQYkPZR8tCzsQS.png" 
+                 alt="Ícone do TADSBot - Clique para abrir o chat" 
+                 class="chatbot-icon">
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <div class="logo-grid">
+                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-ifsul-lvto-WptuigTsNjgoJOfxqyPkem0r0GH6V3.png" alt="Logo do IFSul">
+                            </div>
+                        </div>
+                        <div class="footer-text">
+                            <h3>Instituto Federal</h3>
+                            <p>Sul-rio-grandense</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Campus Santana do Livramento</h4>
+                    <p>Tecnólogo em Análise e Desenvolvimento de Sistemas</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Santana do Livramento, RS</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <ul class="footer-links">
+                        <li><a href="#matriz">Matriz Curricular</a></li>
+                        <li><a href="#documentos">Documentos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Instituto Federal Sul-rio-grandense. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script-tads.js"></script>
+</body>
+</html>
