@@ -1543,7 +1543,7 @@ input:focus {
 .course-title {
   font-size: 1.8rem;
   font-weight: 700;
-  line-height: 0.5;
+  line-height: 1;
   margin-bottom: 15px;
   /* color: #1c1c1c; */
 }
@@ -1766,4 +1766,79 @@ input:focus {
     height: 100%;
     object-fit: cover; 
     object-position: center; 
+}
+
+/* Cores das notícias no Slider */
+
+/* Categorias das notícias */
+.post-category span {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* Categoria: Notícia */
+.category-noticia span {
+  background-color: var(--light-gray);
+  color: var(--primary-blue);
+  border: 2px solid var(--primary-blue);
+}
+
+/* Categoria: Evento */
+.category-evento span {
+  background-color: var(--primary-blue);
+  color: #fff;
+  border: 2px solid var(--primary-blue);
+}
+
+/* Categoria: Emprego */
+.category-emprego span {
+  background-color: var(--light-green);
+  color: #fff;
+  border: 2px solid var(--medium-green);
+}
+
+/* Categoria: Estágio (pode usar outra cor se quiser destacar) */
+.category-estagio span {
+  background-color: var(--primary-green);
+  color: #fff;
+  border: 2px solid var(--primary-green);
+}
+
+/* Estilo base do slide */
+.news-slide {
+  padding: 20px;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-slide:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* Notícia */
+.news-slide:has(.category-noticia) {
+  background-color: #f8fbff; /* azul bem clarinho */
+  border-left: 6px solid var(--primary-blue);
+}
+
+/* Evento */
+.news-slide:has(.category-evento) {
+  background-color: #f0f9f2; /* verde claro */
+  border-left: 6px solid var(--light-green);
+}
+
+/* Emprego */
+.news-slide:has(.category-emprego) {
+  background-color: #f5fff7; /* verde suave */
+  border-left: 6px solid var(--primary-green);
+}
+
+/* Estágio */
+.news-slide:has(.category-estagio) {
+  background-color: #f4fff5; /* verde bem suave */
+  border-left: 6px solid var(--medium-green);
 }
