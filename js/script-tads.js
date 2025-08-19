@@ -412,3 +412,57 @@ document.addEventListener("DOMContentLoaded", () => {
     updateSlider()
   })
 })
+
+/** Temporizador do Slider de Notícias */
+
+/* Slider das notícias */
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.querySelector(".slider-track")
+  const slides = document.querySelectorAll(".news-slide")
+  const prevBtn = document.querySelector(".prev-btn")
+  const nextBtn = document.querySelector(".next-btn")
+
+  let index = 0
+  const totalSlides = slides.length
+  const intervalTime = 5000 // 5 segundos
+  let slideInterval
+
+  function updateSlider() {
+    track.style.transform = `translateX(${-index * 100}%)`
+  }
+
+  function nextSlide() {
+    index = (index + 1) % totalSlides
+    updateSlider()
+  }
+
+  function prevSlide() {
+    index = (index - 1 + totalSlides) % totalSlides
+    updateSlider()
+  }
+
+  // Botões de navegação manual
+  nextBtn.addEventListener("click", () => {
+    nextSlide()
+    resetInterval()
+  })
+
+  prevBtn.addEventListener("click", () => {
+    prevSlide()
+    resetInterval()
+  })
+
+  // Inicia o temporizador automático
+  function startInterval() {
+    slideInterval = setInterval(nextSlide, intervalTime)
+  }
+
+  // Reinicia o temporizador quando o usuário interage
+  function resetInterval() {
+    clearInterval(slideInterval)
+    startInterval()
+  }
+
+  // Inicia ao carregar
+  startInterval()
+})
