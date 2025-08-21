@@ -1548,11 +1548,6 @@ input:focus {
   /* color: #1c1c1c; */
 }
 
-.course-highlight {
-  /*color: #007a3d;            cor institucional (verde IFSul) */
-  /* font-weight: 800; */
-}
-
 .course-subtitle {
   font-size: 1rem;
   line-height: 1.5;
